@@ -38,34 +38,34 @@
         </div>
         <div class="main">
             <form action="" method="post">                
-                <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" size="30" required>
-                </p>
-                
-                <p>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido" size="30">
-                </p>
+                <div class="formBox">
+                    <fieldset class="campoNombre">
+                        <legend>Nombre</legend>
+                        <input type="text" id="nombre">
+                    </fieldset>
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" placeholder="ingrese su email" size="30">
-                </p>
+                    <fieldset class="campoApellido">
+                        <legend>Apellido</legend>
+                        <input type="text" id="apellido">
+                    </fieldset>
 
-                <p>
-                    <label for="telefono">Telefono:</label>
-                    <input type="text" name="telefono" id="telefono" placeholder="ingrese su telefono" size="30">
-                </p>
+                    <fieldset class="campoEmail">
+                        <legend>E-mail</legend>
+                        <input type="text" id="email">
+                    </fieldset>
+
+                    <fieldset class="campoTelefono">
+                        <legend>Telefono</legend>
+                        <input type="text" id="telefono">
+                    </fieldset>
+
+                    <fieldset class="cajaComentarios">
+                        <legend>Comentarios (opcional)</legend>
+                        <textarea id="textarea"></textarea>
+                    </fieldset>
                 
-                <p>
-                    <label for="textarea">Comentarios:</label><br>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="sus comentarios aqui"></textarea>
-                </p>
-        
-                <p>
-                    <input type="submit" value="Enviar">
-                </p>        
+                    <input id="botonEnviar" type="submit" value="Enviar">    
+                </div>   
             </form>
 
             <div id="relleno"></div>

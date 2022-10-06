@@ -102,7 +102,7 @@ body {
 /* fin header */
 
 
-/* main body */
+/* inicio main body */
 .main {
     grid-area: main;
 }
@@ -113,9 +113,65 @@ body {
     height: 1200px;
 }
 
+.formBox {
+    display: block;
+    padding: 0.5em;
+    margin: 0.7em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.4em;
+    background-color: whitesmoke;
+    box-shadow: 0.2em 0.2em 0.2em gray;
+}
+
+[class*="campo"], .cajaComentarios {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.4em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+}
+
+[class*="campo"] legend, .cajaComentarios legend {
+    font-size: 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+[class*="campo"] input{
+    width: 100%;
+    font-size: 1.5em;
+    background: none;
+    border: 0;
+    outline: none;
+}
+
+.cajaComentarios textarea{
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
+    resize: vertical;
+    background: none;
+    border: 0;
+    outline: none;
+}
+
+#botonEnviar {
+    display: block;
+    width: 98%;
+    height: 2em;
+    margin-left: 1%;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    
+}
+
+ /* fin main body*/
 
 
-/* footer */
+/* inicio footer */
 .foot {
     grid-area: footer;
 }
@@ -131,6 +187,7 @@ body {
     text-align: center;
     padding-top: 10px;
 }
+/* fin footer */
 
 @media only screen and (min-width: 600px) {
     
@@ -165,7 +222,6 @@ body {
         color: white;
     }
     /* fin header */
-
 }
 
 @media only screen and (min-width: 1200px) {
