@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/estilo.css">
+<title>Document</title>
+</head>
+
+<body>
+
+
+<div class="header">
+<img src="img/Masaje-piernas2.jpg" alt="" srcset="" width="100%">
+  <h1>RelaxArte</h1>
+  <h3>Centro de bienestar</h3>
+  <h4>Libera tu mente y tu cuerpo. Conocenos</h4>
+</div>
+
+<div class="somos">
+    <h2>QUIENES SOMOS</h2>
+    <p>A través de sus diversas terapias, RelaxArte ofrece reestablecer el equilibrio del cuerpo, mente y alma como un único e indisociable.<br><br>Contamos con
+        un equipo de terapeutas con experiencia en el tratamiento de dolencias ocasionadas por el vertiginoso modo de
+        vida actual, donde las preocupaciones cotidianas y el stress son causantes de dolores corporales y malestar
+        físico.</p>
+  </div>
+
+  <h2>NUESTROS SERVICIOS</h2>
+<div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <h3>ZEN-SHIATSU</h3>
+        <img src="img/Zen-shiatsu.JPG" alt="" srcset="" height="50%">
+        <p>El Zen-Shiatsu es un masaje de origen japonés que consiste en efectuar presiones con la mano, los nudillos,
+            los codos a lo largo de todo el cuerpo sobre unos canales que transportan energía llamados meridianos.</p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+        <h3>YOGA</h3>
+        <img src="img/Yoga.JPG" alt="" srcset="" height="50%">
+        <p>El yoga es una práctica que conecta el cuerpo, la respiración y la mente. Esta práctica utiliza posturas físicas,
+            ejercicios de respiración y meditación para mejorar la salud general.
+            Se brindan clases individuales, grupales, in company y a domicilio.</p>
+    </div>
+    <div class="column" style="background-color:#ccc;">
+        <h3>TERAPIA FLORAL</h3>
+        <img src="img/Terapia.JPG" alt="" srcset="" height="50%">
+        <p>Muchas de las afecciones físicas tienen su origen en estados emocionales negativos. A través de las Flores de
+            Bach se elevan nuestras vibraciones energéticas, reestableciendo el equilibrio energético de nuestro cuerpo.</p>
+    </div>
+</div>
+
+<h2>CONTACTO</h2>
+<h5>Dejanos tus datos y te contactaremos a la brevedad.</h5>
+<form action="" method="post">
+  <p><label for="nombre">Nombre:</label>
+      <input type="text" name="nomb" id="nombre" placeholder="Ingrese su nombre" size="30">
+  </p>
+  <p>
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="nomb" id="apellido">
+  </p>
+
+
+  <h3>Servicio a consultar</h3>
+  <p><label><input type="radio" name="edad" value="15" checked> Zen-Shiatsu</label></p>
+  <p><label><input type="radio" name="edad" value="30"> Yoga</label></p>
+  <p><label><input type="radio" name="edad" value="45"> Terapia floral</label></p>
+
+
+  <input type="submit" value="Enviar">
+</form>
+
+<div class="footer">
+  <p>Acercate:</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.383983241743!2d-58.3702778!3d-34.6080556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses!2sar!4v1660776783145!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+</div>
+
+</body>
+</html>
