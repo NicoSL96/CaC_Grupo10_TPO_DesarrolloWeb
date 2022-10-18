@@ -3,8 +3,20 @@
     margin: 0;
 }
 
+:root{
+    --bkgColor: cornsilk;
+    --hdrColor: burlywood;
+    --ftrColor: black;
+    --navColor: rgba(20, 20, 20, 0.95);
+    --txtColor1: black;
+    --txtColor2: white;
+    --frmColor: whitesmoke;
+    --transp: rgba(0, 0, 0, 0);
+    --negro50p: rgba(0, 0, 0, 0.5);  
+}
+
 body {
-    background-color: cornsilk;
+    background-color: var(--bkgColor);
 }
 
 .grid-container {
@@ -24,24 +36,27 @@ body {
 
 .head header {
     width: 100%;
-    height: 5em;
-    background-color: burlywood;
+    height: 6em;
+    background-color: var(--hdrColor);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .head header .logo {
-    font-size: 2em;
+    display: block;
     width: auto;
-    text-align: center;
-    padding-top: 0.3em;
+    height: 5em;
+    top: 0.5em;
+    align-self: auto;
 } 
 
 .head header nav {
     position: absolute;
-    top: 2.5em;
-    height: 7.5em;
+    top: 3em;
+    height: 8.5em;
     width: 100%;
-    background-color: rgb(50, 50, 50);
+    background-color: var(--navColor);
     font-size: 2em;
     text-align: center;
     z-index: 98;
@@ -60,7 +75,7 @@ body {
 }
 
 .head header nav ul li a {
-    color: white;
+    color: var(--txtColor2);
     text-decoration: none;
 }
 
@@ -108,6 +123,30 @@ body {
     grid-area: main;
 }
 
+.imgHead {
+    background-image: linear-gradient(to bottom, var(--negro50p) 60%
+                                               , var(--bkgColor))
+                    , url('/img/Masaje-piernas2.jpg');
+    width: 100%;
+    height: 12.5em;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.imgHead h2 {
+    font-size: 2.5em;
+    color: var(--txtColor2);
+    text-align: center;
+}
+
+.imgHead p {
+    font-size: 1em;
+    color: var(--txtColor2);
+    text-align: center;
+}
 
 #relleno {
     width: 100%;
@@ -121,7 +160,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 0.4em;
-    background-color: whitesmoke;
+    background-color: var(--frmColor);
     box-shadow: 0.2em 0.2em 0.2em gray;
 }
 
@@ -200,8 +239,8 @@ body {
 .foot footer {
     width: 100%;
     height: 50px;
-    color: azure;
-    background-color: black;
+    color: var(--txtColor2);
+    background-color: var(--ftrColor);
 }
 
 .foot footer p{
@@ -223,11 +262,13 @@ body {
     }
 
     /* inicio header */
-    .head header h1 {
-        width: auto;
-        text-align: center;
-        padding-left: 0.5em;
+    .head header {
+        justify-content: left;
     }
+
+    .head header .logo {
+        margin-left: 1.5em;
+    } 
 
     .head header nav {
         top: 0;
@@ -250,11 +291,23 @@ body {
     }
 
     #menu-cerrar {
-        color: white;
+        color: var(--txtColor2);
     }
     /* fin header */
 
     /* inicio main body*/
+
+    .imgHead {
+        height: 15em;
+    }
+
+    .imgHead h2 {
+        font-size: 3.2em;
+    }
+    
+    .imgHead p {
+        font-size: 1.3em;
+    }
 
     .column{
         display: inline;
@@ -278,10 +331,10 @@ body {
     /* inicio header */
     .head header nav {
         height:2.5em;
-        width: 23em;
+        width: 21em;
         padding-top: 0em;
         padding-right: 0em;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--transp);
         text-align: center;
         font-size: 2em;
     }
@@ -297,7 +350,7 @@ body {
     }
 
     .head header nav ul li a {
-        color: black;
+        color: var(--txtColor1);
     }
 
     #menu {
@@ -310,6 +363,18 @@ body {
     /* fin header */
 
     /* inicio main body*/
+
+    .imgHead {
+        height: 20em;
+    }
+
+    .imgHead h2 {
+        font-size: 3.8em;
+    }
+    
+    .imgHead p {
+        font-size: 1.5em;
+    }
 
     .column {
         display: inline;
