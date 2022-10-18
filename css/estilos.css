@@ -126,7 +126,7 @@ body {
 .imgHead {
     background-image: linear-gradient(to bottom, var(--negro50p) 60%
                                                , var(--bkgColor))
-                    , url('/img/Masaje-piernas2.jpg');
+                    , url('../img/Masaje-piernas2.jpg');
     width: 100%;
     height: 12.5em;
     background-size: cover;
