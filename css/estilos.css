@@ -9,12 +9,12 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'header header header'
-                         'main main main'
-                         'main main main'
-                         'main main main'
-                         'main main main'
-                         'footer footer footer';
+    grid-template-areas: 'header'
+                         'main'
+                         'main'
+                         'main'
+                         'main'
+                         'footer';
 }
 
 /* inicio header */
@@ -29,9 +29,9 @@ body {
     display: flex;
 }
 
-.head header h1 {
-    font-size: 2.8em;
-    width: 100%;
+.head header .logo {
+    font-size: 2em;
+    width: auto;
     text-align: center;
     padding-top: 0.3em;
 } 
@@ -99,6 +99,7 @@ body {
 .active-page {
     font-weight: bold;
 }
+
 /* fin header */
 
 
@@ -168,6 +169,26 @@ body {
     
 }
 
+.column {
+    display: block;
+    position: relative;
+}
+
+.hEsp {
+    display: block;
+}
+
+.imgEsp {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.pEsp {
+    display: block;
+}
+
+
  /* fin main body*/
 
 
@@ -191,6 +212,16 @@ body {
 
 @media only screen and (min-width: 600px) {
     
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'header header header'
+                             'main main main'
+                             'main main main'
+                             'main main main'
+                             'main main main'
+                             'footer footer footer';
+    }
+
     /* inicio header */
     .head header h1 {
         width: auto;
@@ -222,6 +253,24 @@ body {
         color: white;
     }
     /* fin header */
+
+    /* inicio main body*/
+
+    .column{
+        display: inline;
+    }
+
+    .imgEsp{
+        float: left;
+        width: 50%;
+    }
+
+    .pEsp{
+        float: left;
+        width: 50%;
+    }
+
+    /* fin main body*/
 }
 
 @media only screen and (min-width: 1200px) {
@@ -259,4 +308,14 @@ body {
         display: block;
     }
     /* fin header */
+
+    /* inicio main body*/
+
+    .column {
+        display: inline;
+        float: left;
+        width: 33.33%;
+    }
+
+    /* fin main body*/
 }
