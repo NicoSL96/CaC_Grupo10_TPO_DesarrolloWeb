@@ -4,12 +4,12 @@
 }
 
 :root{
-    --bkgColor: cornsilk;
-    --hdrColor: burlywood;
+    --bkgColor: #f2eee9;
+    --hdrColor: #dedad0;
     --ftrColor: black;
     --navColor: rgba(20, 20, 20, 0.95);
     --txtColor1: black;
-    --txtColor2: white;
+    --txtColor2: white; 
     --frmColor: whitesmoke;
     --transp: rgba(0, 0, 0, 0);
     --negro50p: rgba(0, 0, 0, 0.5);  
@@ -27,7 +27,7 @@ body {
                          'main'
                          'main'
                          'footer';
-}
+    }
 
 /* inicio header */
 .head {
@@ -75,7 +75,7 @@ body {
 }
 
 .head header nav ul li a {
-    color: var(--txtColor2);
+    color: rgb(106,130,103);
     text-decoration: none;
 }
 
@@ -207,11 +207,18 @@ body {
     margin-bottom: 1em;
     
 }
+.row{
+    display: block;
+    width: 100%;
+      
+}
 
 .column {
-    display: block;
-    position: relative;
-}
+   display: inline-block;
+   overflow: auto;
+   height: 400px;
+   text-align: center;
+   }
 
 .hEsp {
     display: block;
@@ -313,14 +320,13 @@ body {
         display: inline;
     }
 
-    .imgEsp{
-        float: left;
-        width: 50%;
-    }
 
     .pEsp{
         float: left;
-        width: 50%;
+        width: 100%;
+        padding: 7px;
+        overflow: auto;
+        text-align:center ;
     }
 
     /* fin main body*/
@@ -347,10 +353,6 @@ body {
 
     .head header nav ul li {
         margin-bottom: 0;
-    }
-
-    .head header nav ul li a {
-        color: var(--txtColor1);
     }
 
     #menu {
