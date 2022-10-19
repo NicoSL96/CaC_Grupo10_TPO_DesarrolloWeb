@@ -8,7 +8,7 @@
     --hdrColor: #dedad0;
     --ftrColor: black;
     --navColor: rgba(20, 20, 20, 0.95);
-    --txtColor1: black;
+    --txtColor1: rgb(106,130,103);
     --txtColor2: white; 
     --frmColor: whitesmoke;
     --transp: rgba(0, 0, 0, 0);
@@ -75,7 +75,7 @@ body {
 }
 
 .head header nav ul li a {
-    color: rgb(106,130,103);
+    color: var(--txtColor1);
     text-decoration: none;
 }
 
@@ -203,43 +203,46 @@ body {
     margin-bottom: 1em;
     
 }
-.row{
-    display: block;
-    width: 100%;
-      
-}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 .column {
-   display: inline-block;
-   height: 400px;
+   float: left;
+   width: 100%;
    text-align: center;
    }
 
 .hEsp {
-    display: block;
+    width: 95%;
+    margin: 2.5%;
 }
 
 .imgEsp {
     width: 90%;
     height: auto;
-    box-sizing: border-box;
 }
 
 .pEsp {
     display: block;
     overflow: auto;
+    width: 95%;
+    text-align: justify;
+    margin: 2.5%;
     }
 
-    h3{
-        font-size: 1.8em;
-    }
+h3{
+    font-size: 1.8em;
+   }
 
 .mapa{
     background-color: #c8c8b9;
     padding-left: 6em;
     padding-top: 3em;
     padding-bottom: 3em;
-
 }
 
 
@@ -338,7 +341,6 @@ body {
         text-align:center ;
         font-size: 1.3em;
     }
-
     /* fin main body*/
 }
 
