@@ -121,6 +121,7 @@ body {
 /* inicio main body */
 .main {
     grid-area: main;
+   
 }
 
 .imgHead {
@@ -146,11 +147,6 @@ body {
     font-size: 1em;
     color: var(--txtColor2);
     text-align: center;
-}
-
-#relleno {
-    width: 100%;
-    height: 1200px;
 }
 
 .formBox {
@@ -226,15 +222,29 @@ body {
 }
 
 .imgEsp {
-    width: 95%;
+    width: 90%;
     height: auto;
 }
 
 .pEsp {
+    display: block;
+    overflow: auto;
     width: 95%;
     text-align: justify;
     margin: 2.5%;
+    }
+
+h3{
+    font-size: 1.8em;
+   }
+
+.mapa{
+    background-color: #c8c8b9;
+    padding-left: 6em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
+
 
 
  /* fin main body*/
@@ -318,6 +328,19 @@ body {
         font-size: 1.3em;
     }
 
+    .column{
+        display: inline;
+    }
+
+
+    .pEsp{
+        float: left;
+        width: 94%;
+        padding: 7px;
+        overflow: auto;
+        text-align:center ;
+        font-size: 1.3em;
+    }
     /* fin main body*/
 }
 
