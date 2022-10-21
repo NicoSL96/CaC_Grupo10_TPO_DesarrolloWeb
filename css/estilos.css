@@ -7,7 +7,7 @@
     --bkgColor: #f2eee9;
     --hdrColor: #dedad0;
     --navColor: rgba(20, 20, 20, 0.95);
-    --txtColor1: black;
+    --txtColor1: rgb(106,130,103);
     --txtColor2: white; 
     --txtColor3: rgb(106,130,103);
     --frmColor: whitesmoke;
@@ -206,20 +206,20 @@ body {
 .row{
     display: block;
     width: 100%;
-
-      
+ 
 }
 
 .column {
    display: inline-block;
-   height: 500px;
+   height:500px;
    text-align: center;
    width: auto;
    border-radius: 1em;
    }
 
 .hEsp {
-    display: block;
+    width: 95%;
+    margin: 2.5%;
 }
 
 .imgEsp {
@@ -231,18 +231,20 @@ body {
 .pEsp {
     display: block;
     overflow: auto;
+    width: 95%;
+    text-align: justify;
+    margin: 2.5%;
     }
 
-    h3{
-        font-size: 1.8em;
-    }
+h3{
+    font-size: 1.8em;
+   }
 
 .mapa{
     background-color: #c8c8b9;
     padding-left: 6em;
     padding-top: 3em;
     padding-bottom: 3em;
-
 }
 
 
@@ -378,7 +380,6 @@ nav a {
         text-align:center ;
         font-size: 1.3em;
     }
-
     /* fin main body*/
 }
 
