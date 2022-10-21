@@ -1,0 +1,133 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="css/estilos.css">
+    
+        <title>Contacto</title>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="head">
+                <header>
+                    <h1>mi sitio</h1>
+    
+                    <input type="checkbox" id="menu-check">
+                    <label id="menu" for="menu-check">
+                        <span id="menu-abrir">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <span id="menu-cerrar">
+                            <i class="fa-solid fa-x"></i>
+                        </span>
+                    </label>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="especialidades.html">Especialidades</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a class="active-page" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+            <div class="formBox">
+                <form name="fvalida">
+                    <fieldset class="campoNombre">
+                        <legend>Nombre</legend>
+                        <input type="text" id="nombre">
+                    </fieldset>
+
+
+                    <fieldset class="campoEmail">
+                        <legend>E-mail</legend>
+                        <input type="text" id="email">
+                    </fieldset>
+
+                    <fieldset class="campoTelefono">
+                        <legend>Teléfono</legend>
+                        <input type="text" id="telefono">
+                    </fieldset>
+
+                    <fieldset class="interes">
+                        <legend>Servicio de interés</legend>
+                        <select id="select" name=interes>
+                                <option value="Elegir">Deseo consultar por
+                                <option value="Yoga">Clases de Yoga
+                                <option value="Shiatsu">Zen-Shiatsu
+                                <option value="Terapia">Terapia floral
+                        </select>
+                    </fieldset>
+
+<!--                     <fieldset class="interes">
+                        <legend>Deseo consultar por</legend> -->
+<!--                         <radio id="select" name=interes>
+                                </radio> -->
+<!--                                 <input type="radio" name="interes" id="yoga" value="Yoga"> Clases de Yoga
+                                <input type="radio" name="interes" id="shiatsu" value="Shiatsu"> Zen-Shiatsu
+                                <input type="radio" name="interes" id="terapia" value="Terapia"> Terapia floral
+                    </fieldset> -->
+
+                    <fieldset class="cajaComentarios">
+                        <legend>Comentarios (opcional)</legend>
+                        <textarea id="textarea"></textarea>
+                    </fieldset>                    
+
+                    <input type="button" value="Enviar" onclick="valida_envia()"> 
+
+                </form>
+                <script>
+
+                    function valida_envia() {
+
+                        if (document.fvalida.nombre.value.length == 0) {
+                            alert("Por favor completa tu nombre")
+                            document.fvalida.nombre.focus()
+                            return 0;
+                        }
+                   
+                         if (document.fvalida.email.value.length == 0) {
+                            alert("Por favor completa tu email")
+                            document.fvalida.email.focus()
+                            return 0;
+                        }  
+
+
+                        if (document.fvalida.telefono.value.length == 0) {
+                            alert("Por favor completa un tel de contacto")
+                            document.fvalida.telefono.focus()
+                            return 0;
+                        }
+
+                        //valido el interés
+                        if (document.fvalida.interes.selectedIndex == 0) {
+                            alert("¿Por cuál servicio deseas consultar?")
+                            document.fvalida.interes.focus()
+                            return 0;
+                        }
+            
+                        //el formulario se envia
+                        alert("Muchas gracias por enviar el formulario");
+                        document.fvalida.submit();
+                    }
+                    
+
+                </script>
+            
+
+  <div id="relleno"></div>
+</div>
+<div class="foot">
+    <footer>
+        <p>Derechos&Reservados</p>
+    </footer>
+</div>
+</div>
+</body>
+</html>
+
+
