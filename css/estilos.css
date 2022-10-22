@@ -6,11 +6,11 @@
 :root{
     --bkgColor: #f2eee9;
     --hdrColor: #dedad0;
-    --navColor: rgba(20, 20, 20, 0.95);
+    --navColor: rgba(20, 20, 20);
     --ftrColor: #c8c8b9;
     --txtColor1: rgb(106,130,103);
     --txtColor2: white; 
-    --txtColor3: rgb(106,130,103);
+    --txtColor3: black;
     --frmColor: whitesmoke;
     --transp: rgba(0, 0, 0, 0);
     --negro50p: rgba(0, 0, 0, 0.5);  
@@ -39,17 +39,17 @@ body {
     width: 100%;
     height: 6em;
     background-color: var(--hdrColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
 }
 
 .head header .logo {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: auto;
     height: 5em;
-    top: 0.5em;
-    align-self: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 } 
 
 .head header nav {
@@ -76,7 +76,7 @@ body {
 }
 
 .head header nav ul li a {
-    color: var(--txtColor3);
+    color: var(--txtColor1);
     text-decoration: none;
 }
 
@@ -262,26 +262,30 @@ a{
 
 .foot footer {
     width: 100%;
-    height: 8.5em;
-    color: var(--txtColor2);
+    height: 10em;
     background-color: var(--ftrColor);
+    box-sizing: border-box;
 }
 
-.contenedor {
-    width: 90%;
+footer .contenedorInfo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+}
+   
+.logo-ftr {
+    height: 4.5em;
+    width: auto;
+    display: block;
     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding-top: 1em;
 }
 
-footer .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   } 
-
-.titulo {
-    color: var(--txtColor3);
-}
 footer .titulo {
+    color: var(--txtColor3);
     font-size: 25px;
     font-weight: 100;
     text-align: center;
@@ -293,15 +297,44 @@ footer .linea {
     background-color: var(--txtColor3);
     margin-bottom: 10px;
 }
-footer .boton {
-    margin-bottom: 10px;
-    }
-nav {
-    min-width: 6em;
+
+.navFtr {
+    display: none;
 }
-nav a {
+
+.navFtr ul, .navFtr a {
+    list-style: none;
+    text-align: center;
+    color: var(--txtColor1);    
+}
+
+.redesBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redesBox .titulo, .redesBox .linea {
+    display: none;
+}
+
+[id*="boton"] {
+    font-size: 2em;
+    color: var(--txtColor1);
+}
+
+.fondoFtr {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.1em;
+}
+
+.fondoFtr p, .fondoFtr a{
+    font-size: 1.1em;
+    padding-left: 0.3em;
+    padding-right: 0.5em;
     color: var(--txtColor3);
 }
+
 /* fin footer */
 
 @media only screen and (min-width: 600px) {
@@ -381,6 +414,24 @@ nav a {
         font-size: 1.3em;
     }
     /* fin main body*/
+
+    /* inicio footer*/
+
+    footer .contenedorInfo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-ftr {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    /* fin footer*/
 }
 
 @media only screen and (min-width: 1200px) {
