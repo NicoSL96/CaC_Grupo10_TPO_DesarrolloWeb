@@ -7,6 +7,7 @@
     --bkgColor: #f2eee9;
     --hdrColor: #dedad0;
     --navColor: rgba(20, 20, 20, 0.95);
+    --ftrColor: #c8c8b9;
     --txtColor1: rgb(106,130,103);
     --txtColor2: white; 
     --txtColor3: rgb(106,130,103);
@@ -241,7 +242,6 @@ h3{
    }
 
 .mapa{
-    background-color: #c8c8b9;
     padding-left: 6em;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -264,7 +264,7 @@ a{
     width: 100%;
     height: 8.5em;
     color: var(--txtColor2);
-    background-color: var(--bkgColor);
+    background-color: var(--ftrColor);
 }
 
 .contenedor {
